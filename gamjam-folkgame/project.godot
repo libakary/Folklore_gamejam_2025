@@ -30,7 +30,8 @@ directories/dch_directory={
 "Yeva": "res://characters/Yeva.dch"
 }
 directories/dtl_directory={
-"helloWorld": "res://timelines/helloWorld.dtl"
+"A1S1": "res://timelines/A1S1.dtl",
+"timelines/helloWorld": "res://timelines/helloWorld.dtl"
 }
 layout/style_directory={
 "": "res://themes/New_File.tres",
