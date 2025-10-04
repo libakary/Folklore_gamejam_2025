@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=7 format=3 uid="uid://bqh4o7bcyvahp"]
 
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
+[ext_resource type="Texture2D" uid="uid://ctbigwi0lpdfy" path="res://assets/environment/forest floor texture.png" id="1_2f638"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -15,6 +16,9 @@ sky = SubResource("Sky_0ofam")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8odxw"]
+albedo_texture = ExtResource("1_2f638")
+
 [node name="Scene1Forest" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -25,8 +29,9 @@ transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545
 shadow_enabled = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(5.2301435, 0, 0, 0, 1, 0, 0, 0, 5.5660496, 0, -0.03611988, 0)
+transform = Transform3D(5.2301435, 0, 0, 0, 1, 0, 0, 0, 5.5660496, -0.16430157, -0.15225643, 0.038420677)
 use_collision = true
 size = Vector3(1, 0.03955078, 1)
+material = SubResource("StandardMaterial3D_8odxw")
 
 [node name="MainGameScreen" parent="." instance=ExtResource("1_0ofam")]
