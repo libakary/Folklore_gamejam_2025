@@ -3,11 +3,15 @@
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [ext_resource type="PackedScene" uid="uid://clxgfcxjaqh35" path="res://scenes/player_protagonist_body.tscn" id="1_2f638"]
 >>>>>>> 83e21956b69d35d114e0092928d81ab5ef805eb8
 =======
 >>>>>>> parent of d706ba9 (add player to main scene)
+=======
+[ext_resource type="PackedScene" path="res://scenes/player_protagonist_body.tscn" id="1_2f638"]
+>>>>>>> 1b7d3115892b267f0d4eef0c041c2b7384dd0f48
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)

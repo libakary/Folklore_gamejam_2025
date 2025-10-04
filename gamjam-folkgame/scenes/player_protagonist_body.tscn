@@ -1,28 +1,27 @@
 [gd_scene load_steps=5 format=3 uid="uid://ckxkvcioc74xt"]
 
 [ext_resource type="Script" uid="uid://bjsynlpfhvt1w" path="res://scripts/player_protagonist_body.gd" id="1_0hgyv"]
-[ext_resource type="Texture2D" uid="uid://c7tbbapehwc1u" path="res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png" id="2_0hgyv"]
+[ext_resource type="Texture2D" uid="uid://brsqo6t11v4h" path="res://icon.svg" id="1_82syf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hgyv"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_0hgyv")
+"texture": ExtResource("1_82syf")
 }],
 "loop": true,
 "name": &"default",
 "speed": 5.0
 }]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_0hgyv"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_nvbmq"]
 
 [node name="PlayerProtagonistBody" type="CharacterBody3D"]
 script = ExtResource("1_0hgyv")
 
 [node name="PlayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1592887, 0.73953855, -0.3008108)
 sprite_frames = SubResource("SpriteFrames_0hgyv")
 
 [node name="CollisionPlayerProtagonist" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14254373, 0.3308887, -0.23834217)
-shape = SubResource("BoxShape3D_0hgyv")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.004163027)
+shape = SubResource("SphereShape3D_nvbmq")
