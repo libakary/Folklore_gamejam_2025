@@ -1,16 +1,20 @@
 [gd_scene load_steps=3 format=3 uid="uid://du6ykx423iqw3"]
 
-[ext_resource type="Texture2D" uid="uid://86nyisw861n1" path="res://assets/environment/tree - kuusk.png" id="1_cdfo3"]
+[ext_resource type="Texture2D" uid="uid://dqi4b7p7r4cu0" path="res://assets/environment/itemacornfromground.png" id="1_cdfo3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1bd7c"]
+size = Vector3(1, 0.37609863, 0.5198059)
 
 [node name="acorns" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
+collision_layer = 4
+collision_mask = 7
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0038452148, 0.051742554)
 shape = SubResource("BoxShape3D_1bd7c")
 
 [node name="Sprite3D" type="Sprite3D" parent="RigidBody3D"]
-transform = Transform3D(0.14154595, 0, 0, 0, 0.11276218, 0, 0, 0, 0.55750763, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 0.505311, 0.86293733, 0, -0.86293733, 0.505311, 0, 0, 0)
 texture = ExtResource("1_cdfo3")
