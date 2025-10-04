@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dgo6dudvb6wj3"]
+
+[ext_resource type="Script" uid="uid://c66mujlnffcqe" path="res://scripts/trees.gd" id="1_hldw5"]
+[ext_resource type="Texture2D" uid="uid://86nyisw861n1" path="res://assets/environment/tree - kuusk.png" id="2_v4a6f"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2g2b4"]
+size = Vector3(1.645916, 1.130249, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cy38b"]
+size = Vector3(0.9256134, 1, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hldw5"]
+size = Vector3(0.69281006, 1.1917267, 1)
+
+[node name="Trees" type="Node3D"]
+script = ExtResource("1_hldw5")
+
+[node name="kuusk" type="RigidBody3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="kuusk"]
+texture = ExtResource("2_v4a6f")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="kuusk"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2371962, -4.4332056, 0)
+shape = SubResource("BoxShape3D_2g2b4")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="kuusk"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17046809, -3.5912294, 0)
+shape = SubResource("BoxShape3D_cy38b")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="kuusk"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15990496, -2.5008216, 0)
+shape = SubResource("BoxShape3D_hldw5")
