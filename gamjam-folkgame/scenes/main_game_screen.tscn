@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://yxdm4m0qfpu"]
-
-[ext_resource type="PackedScene" uid="uid://clxgfcxjaqh35" path="res://scenes/player_protagonist_body.tscn" id="1_3u8mm"]
+[gd_scene format=3 uid="uid://yxdm4m0qfpu"]
 
 [node name="MainGameScreen" type="SubViewportContainer"]
 anchors_preset = 15
@@ -13,10 +11,5 @@ grow_vertical = 2
 handle_input_locally = false
 size = Vector2i(1280, 720)
 render_target_update_mode = 4
-
-[node name="PlayerProtagonistBody" parent="SubViewport" instance=ExtResource("1_3u8mm")]
-
-[node name="Camera3D" type="Camera3D" parent="SubViewport/PlayerProtagonistBody"]
-transform = Transform3D(1, 0, 0, 0, 0.9104889, 0.41353354, 0, -0.41353354, 0.9104889, 0, 0.68224335, 1.0992322)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="SubViewport"]
