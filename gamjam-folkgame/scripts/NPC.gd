@@ -22,4 +22,4 @@ func playerHere():
 		interactionPossible = true
 	else:
 		nameNPC.hide()
-		interactionPossible = true
+		interactionPossible = false
