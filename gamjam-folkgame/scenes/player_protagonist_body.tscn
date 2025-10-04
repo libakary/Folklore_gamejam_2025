@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://clxgfcxjaqh35"]
 
 [ext_resource type="Script" uid="uid://bjsynlpfhvt1w" path="res://scripts/player_protagonist_body.gd" id="1_0hgyv"]
-[ext_resource type="Texture2D" uid="uid://c7tbbapehwc1u" path="res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png" id="2_0hgyv"]
+[ext_resource type="Texture2D" uid="uid://q18m35i10pod" path="res://assets/playerprotag/protag - overworld stand left.png" id="2_0hgyv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hgyv"]
 animations = [{
@@ -20,9 +20,9 @@ animations = [{
 script = ExtResource("1_0hgyv")
 
 [node name="PlayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1592887, 0.73953855, -0.3008108)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1592887, 0.73953855, -0.0004093051)
 sprite_frames = SubResource("SpriteFrames_0hgyv")
 
 [node name="CollisionPlayerProtagonist" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14254373, 0.3308887, -0.23834217)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14254373, 0.3308887, -0.00053188205)
 shape = SubResource("BoxShape3D_0hgyv")
