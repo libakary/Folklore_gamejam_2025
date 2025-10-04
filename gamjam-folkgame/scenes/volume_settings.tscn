@@ -1,0 +1,106 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1xkx5lifrei2"]
+
+[ext_resource type="Script" uid="uid://cd3enrmsbop3t" path="res://scripts/volume_settings.gd" id="1_515d2"]
+
+[node name="VolumeSettings" type="VBoxContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -578.5
+offset_top = -91.0
+offset_right = 578.5
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_515d2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Mute" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "/"
+
+[node name="<" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "<"
+
+[node name="Master" type="HSlider" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 1.0
+step = 0.05
+
+[node name=">" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = ">"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 2
+text = "Music"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="muteMusic" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+text = "/"
+
+[node name="volDownMusic" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+text = "<"
+
+[node name="Music" type="HSlider" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+
+[node name="volUpMusic" type="Button" parent="HBoxContainer2"]
+layout_mode = 2
+text = ">"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+text = "SFX"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="muteSFX" type="Button" parent="HBoxContainer3"]
+layout_mode = 2
+text = "/"
+
+[node name="volDownSFX" type="Button" parent="HBoxContainer3"]
+layout_mode = 2
+text = "<"
+
+[node name="SFX" type="HSlider" parent="HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+
+[node name="volUpSFX" type="Button" parent="HBoxContainer3"]
+layout_mode = 2
+text = ">"
+
+[connection signal="pressed" from="HBoxContainer/Mute" to="." method="_on_mute_pressed"]
+[connection signal="pressed" from="HBoxContainer/<" to="." method="_on_down_pressed"]
+[connection signal="mouse_exited" from="HBoxContainer/Master" to="." method="_on_master_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer/>" to="." method="_on_up_pressed"]
+[connection signal="pressed" from="HBoxContainer2/muteMusic" to="." method="_on_mute_music_pressed"]
+[connection signal="pressed" from="HBoxContainer2/volDownMusic" to="." method="_on_vol_down_music_pressed"]
+[connection signal="mouse_exited" from="HBoxContainer2/Music" to="." method="_on_music_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer2/volUpMusic" to="." method="_on_vol_up_music_pressed"]
+[connection signal="pressed" from="HBoxContainer3/muteSFX" to="." method="_on_mute_sfx_pressed"]
+[connection signal="pressed" from="HBoxContainer3/volDownSFX" to="." method="_on_vol_down_sfx_pressed"]
+[connection signal="mouse_exited" from="HBoxContainer3/SFX" to="." method="_on_sfx_mouse_exited"]
+[connection signal="pressed" from="HBoxContainer3/volUpSFX" to="." method="_on_vol_up_sfx_pressed"]
