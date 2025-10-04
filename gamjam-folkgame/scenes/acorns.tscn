@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://du6ykx423iqw3"]
+[gd_scene load_steps=4 format=3 uid="uid://du6ykx423iqw3"]
 
 [ext_resource type="Texture2D" uid="uid://dqi4b7p7r4cu0" path="res://assets/environment/itemacornfromground.png" id="1_cdfo3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1bd7c"]
 size = Vector3(1, 0.37609863, 0.5198059)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_cdfo3"]
 
 [node name="acorns" type="Node3D"]
 
@@ -17,4 +19,10 @@ shape = SubResource("BoxShape3D_1bd7c")
 
 [node name="Sprite3D" type="Sprite3D" parent="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.505311, 0.86293733, 0, -0.86293733, 0.505311, 0, 0, 0)
+texture_filter = 2
 texture = ExtResource("1_cdfo3")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="RigidBody3D"]
+transform = Transform3D(1.206712, 0, 0, 0, 1, 0, 0, 0, 1.1722602, 0, 0, 0)
+shape = SubResource("SphereShape3D_cdfo3")
+target_position = Vector3(0, 0, 0)
