@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=13 format=3 uid="uid://bqh4o7bcyvahp"]
 
 [ext_resource type="Script" uid="uid://bguobbov1fplr" path="res://scenes/inputManager.gd" id="1_0kj01"]
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
@@ -25,6 +25,8 @@ glow_enabled = true
 albedo_texture = ExtResource("1_2f638")
 uv1_triplanar = true
 
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_na1q6"]
+
 [node name="Scene1Forest" type="Node3D"]
 script = ExtResource("1_0kj01")
 
@@ -35,11 +37,17 @@ environment = SubResource("Environment_2f638")
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
-[node name="CSGBox3D" type="CSGBox3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(5.2301435, 0, 0, 0, 1, 0, 0, 0, 5.5660496, 0.99607253, -0.15225643, 1.6493952)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
 use_collision = true
 size = Vector3(2.8284912, 0.03955078, 2.8571777)
 material = SubResource("StandardMaterial3D_8odxw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.043646097, 0)
+shape = SubResource("WorldBoundaryShape3D_na1q6")
 
 [node name="MainGameScreen" parent="." instance=ExtResource("1_0ofam")]
 
@@ -51,7 +59,7 @@ kuusk = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.271174, -0.13248104, -0.85200906)
 
 [node name="Fox" parent="." instance=ExtResource("5_4ntu6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2417936, -0.1324808, 0.8715444)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2417936, -0.04273337, 0.8715444)
 
 [node name="acorns" parent="." instance=ExtResource("7_na1q6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8045123, 0.039263666, 2.140807)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8045123, 0.37902206, 2.140807)
