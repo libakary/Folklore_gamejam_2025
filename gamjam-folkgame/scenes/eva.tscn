@@ -32,6 +32,7 @@ collision_mask = 2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9542059, 0)
+texture_filter = 2
 sprite_frames = SubResource("SpriteFrames_oqrlm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]

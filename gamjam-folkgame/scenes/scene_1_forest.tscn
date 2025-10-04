@@ -1,5 +1,6 @@
-[gd_scene load_steps=10 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=11 format=3 uid="uid://bqh4o7bcyvahp"]
 
+[ext_resource type="Script" uid="uid://bguobbov1fplr" path="res://scenes/inputManager.gd" id="1_0kj01"]
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
 [ext_resource type="Texture2D" uid="uid://ctbigwi0lpdfy" path="res://assets/environment/forest floor texture.png" id="1_2f638"]
 [ext_resource type="PackedScene" uid="uid://dgo6dudvb6wj3" path="res://scenes/trees.tscn" id="3_8odxw"]
@@ -24,6 +25,7 @@ albedo_texture = ExtResource("1_2f638")
 uv1_triplanar = true
 
 [node name="Scene1Forest" type="Node3D"]
+script = ExtResource("1_0kj01")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_2f638")

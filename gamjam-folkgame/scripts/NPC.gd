@@ -1,6 +1,6 @@
 extends Node3D
 
-@export var interactable: bool
+var interactionPossible = false
 
 @onready var Cast: ShapeCast3D = $CharacterBody3D/ShapeCast3D
 @onready var nameNPC: Label3D = $Name
@@ -19,5 +19,7 @@ func _process(_delta: float) -> void:
 func playerHere():
 	if Cast.is_colliding():
 		nameNPC.show()
+		interactionPossible = true
 	else:
 		nameNPC.hide()
+		interactionPossible = true
