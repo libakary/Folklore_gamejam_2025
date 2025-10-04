@@ -15,14 +15,16 @@ animations = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0hgyv"]
+size = Vector3(2.1646118, 4.0149536, 0.42321777)
 
 [node name="PlayerProtagonistBody" type="CharacterBody3D"]
+transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.4, 0, 0, 0)
 script = ExtResource("1_0hgyv")
 
 [node name="PlayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.1592887, 0.73953855, -0.3008108)
+transform = Transform3D(2.0999975, 0, 0, 0, 2.0999975, 0, 0, 0, 2.6999948, 0.0012940855, 2.28692, -0.3008103)
 sprite_frames = SubResource("SpriteFrames_0hgyv")
 
-[node name="CollisionPlayerProtagonist" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14254373, 0.3308887, -0.23834217)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.9999713, 0, 0, 0, 0.9999713, 0, 0, 0, 0.9999467, -0.0036550902, 2.2835014, -0.001961669)
 shape = SubResource("BoxShape3D_0hgyv")
