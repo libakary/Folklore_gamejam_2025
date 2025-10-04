@@ -31,7 +31,10 @@ directories/dch_directory={
 directories/dtl_directory={
 "helloWorld": "res://characters/helloWorld.dtl"
 }
-layout/style_directory={}
+layout/style_directory={
+"": "res://themes/New_File.tres",
+"Theme": "res://themes/New_File.tres"
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -69,8 +72,8 @@ audio/type_sound_bus="SFX"
 text/input_action="dialogic_default_action"
 text/autocolor_names=false
 glossary/default_case_sensitive=true
-layout/style_list=[]
-layout/default_style="Default"
+layout/style_list=["res://themes/New_File.tres"]
+layout/default_style="res://themes/New_File.tres"
 variables={}
 
 [display]
