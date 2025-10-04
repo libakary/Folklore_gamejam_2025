@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://ckxkvcioc74xt"]
+[gd_scene load_steps=5 format=3 uid="uid://ckxkvcioc74xt"]
 
+[ext_resource type="Script" uid="uid://bjsynlpfhvt1w" path="res://scripts/player_protagonist_body.gd" id="1_0hgyv"]
 [ext_resource type="Texture2D" uid="uid://brsqo6t11v4h" path="res://icon.svg" id="1_82syf"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hgyv"]
@@ -13,7 +14,14 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="PlayerProtagonistBody" type="CharacterBody3D"]
+[sub_resource type="SphereShape3D" id="SphereShape3D_nvbmq"]
 
-[node name="PLayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
+[node name="PlayerProtagonistBody" type="CharacterBody3D"]
+script = ExtResource("1_0hgyv")
+
+[node name="PlayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
 sprite_frames = SubResource("SpriteFrames_0hgyv")
+
+[node name="CollisionPlayerProtagonist" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.004163027)
+shape = SubResource("SphereShape3D_nvbmq")
