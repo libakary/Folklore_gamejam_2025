@@ -2,9 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 [ext_resource type="PackedScene" uid="uid://clxgfcxjaqh35" path="res://scenes/player_protagonist_body.tscn" id="1_2f638"]
 >>>>>>> 83e21956b69d35d114e0092928d81ab5ef805eb8
+=======
+>>>>>>> parent of d706ba9 (add player to main scene)
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -34,3 +37,11 @@ use_collision = true
 size = Vector3(1, 0.03955078, 1)
 
 [node name="MainGameScreen" parent="." instance=ExtResource("1_0ofam")]
+<<<<<<< HEAD
+=======
+
+[node name="Camera3D" type="Camera3D" parent="MainGameScreen/SubViewport" index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.98134977, 0.19223079, 0, -0.19223079, 0.98134977, 0, 0.21738774, 0.9026978)
+
+[editable path="MainGameScreen"]
+>>>>>>> parent of d706ba9 (add player to main scene)
