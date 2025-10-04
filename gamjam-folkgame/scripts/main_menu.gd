@@ -1,8 +1,10 @@
 extends CanvasLayer
 
-
+#var time_elapsed: float = 0.0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#var dict: Dictionary = SaveManager.load_game()
+	#time_elapsed = dict["time_elapsed"]
 	pass # Replace with function body.
 
 
@@ -20,4 +22,5 @@ func _on_options_pressed() -> void:
 	pass
 
 func _on_quit_pressed() -> void:
+	#SaveManager.save_game({"time_elapsed": time_elapsed})
 	get_tree().quit()
