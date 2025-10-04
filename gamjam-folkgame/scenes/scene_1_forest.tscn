@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=10 format=3 uid="uid://bqh4o7bcyvahp"]
 
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
 [ext_resource type="Texture2D" uid="uid://ctbigwi0lpdfy" path="res://assets/environment/forest floor texture.png" id="1_2f638"]
 [ext_resource type="PackedScene" uid="uid://dgo6dudvb6wj3" path="res://scenes/trees.tscn" id="3_8odxw"]
-[ext_resource type="PackedScene" uid="uid://bjxmkt2o3y7r1" path="res://scenes/eva.tscn" id="4_3axq4"]
+[ext_resource type="PackedScene" uid="uid://cnlw3m6rjcooh" path="res://scenes/eva.tscn" id="4_3axq4"]
+[ext_resource type="PackedScene" uid="uid://c3nyuoq8vi3i4" path="res://scenes/fox.tscn" id="5_4ntu6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -45,3 +46,6 @@ kuusk = true
 
 [node name="Eva" parent="." instance=ExtResource("4_3axq4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.271174, -0.13248104, -0.85200906)
+
+[node name="Fox" parent="." instance=ExtResource("5_4ntu6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2417936, -0.1324808, 0.8715444)
