@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjxmkt2o3y7r1"]
+[gd_scene load_steps=6 format=3 uid="uid://cnlw3m6rjcooh"]
 
 [ext_resource type="Texture2D" uid="uid://c7tbbapehwc1u" path="res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png" id="1_kckqg"]
+[ext_resource type="Script" uid="uid://o35m7w40st8e" path="res://scripts/NPC.gd" id="1_oqrlm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oqrlm"]
 animations = [{
@@ -19,8 +20,9 @@ size = Vector3(0.7800598, 1.8685913, 0.24017334)
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kckqg"]
 
 [node name="Eva" type="Node3D"]
+script = ExtResource("1_oqrlm")
 
-[node name="Label3D" type="Label3D" parent="."]
+[node name="Name" type="Label3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7240508, 0)
 text = "Eva"
 
@@ -30,6 +32,7 @@ collision_mask = 2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9542059, 0)
+texture_filter = 2
 sprite_frames = SubResource("SpriteFrames_oqrlm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
