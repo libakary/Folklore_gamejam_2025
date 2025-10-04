@@ -1,13 +1,13 @@
 [gd_scene load_steps=6 format=3 uid="uid://cnlw3m6rjcooh"]
 
-[ext_resource type="Texture2D" uid="uid://c7tbbapehwc1u" path="res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png" id="1_kckqg"]
 [ext_resource type="Script" uid="uid://o35m7w40st8e" path="res://scripts/NPC.gd" id="1_oqrlm"]
+[ext_resource type="Texture2D" uid="uid://cylb1mb8uit8c" path="res://assets/NPCs/character-eva-yevaWIPplaceholder.png" id="2_oqrlm"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oqrlm"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_kckqg")
+"texture": ExtResource("2_oqrlm")
 }],
 "loop": true,
 "name": &"default",
@@ -31,7 +31,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9542059, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2893171, 0)
 texture_filter = 2
 sprite_frames = SubResource("SpriteFrames_oqrlm")
 
