@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=12 format=3 uid="uid://bqh4o7bcyvahp"]
 
 [ext_resource type="Script" uid="uid://bguobbov1fplr" path="res://scenes/inputManager.gd" id="1_0kj01"]
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dgo6dudvb6wj3" path="res://scenes/trees.tscn" id="3_8odxw"]
 [ext_resource type="PackedScene" uid="uid://bjxmkt2o3y7r1" path="res://scenes/eva.tscn" id="4_3axq4"]
 [ext_resource type="PackedScene" uid="uid://c3nyuoq8vi3i4" path="res://scenes/fox.tscn" id="5_4ntu6"]
+[ext_resource type="PackedScene" uid="uid://du6ykx423iqw3" path="res://scenes/acorns.tscn" id="7_na1q6"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -51,3 +52,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.271174, -0.13248104, -0.85
 
 [node name="Fox" parent="." instance=ExtResource("5_4ntu6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2417936, -0.1324808, 0.8715444)
+
+[node name="acorns" parent="." instance=ExtResource("7_na1q6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8045123, 0.039263666, 2.140807)
