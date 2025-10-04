@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://clxgfcxjaqh35"]
+[gd_scene load_steps=5 format=3 uid="uid://ckxkvcioc74xt"]
 
 [ext_resource type="Script" uid="uid://bjsynlpfhvt1w" path="res://scripts/player_protagonist_body.gd" id="1_0hgyv"]
 [ext_resource type="Texture2D" uid="uid://c7tbbapehwc1u" path="res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png" id="2_0hgyv"]
