@@ -14,17 +14,17 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_0hgyv"]
-size = Vector3(2.1646118, 4.0149536, 0.42321777)
+[sub_resource type="BoxShape3D" id="BoxShape3D_nvbmq"]
+size = Vector3(1.0427246, 1.873169, 0.4991455)
 
 [node name="PlayerProtagonistBody" type="CharacterBody3D"]
 transform = Transform3D(1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.4, 0, 0, 0)
 script = ExtResource("1_0hgyv")
 
 [node name="PlayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(2.0999975, 0, 0, 0, 2.0999975, 0, 0, 0, 2.6999948, 0.0012940855, 2.28692, -0.3008103)
+transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.99999964, -0.0038623794, 0.93397343, 0)
 sprite_frames = SubResource("SpriteFrames_0hgyv")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(0.9999713, 0, 0, 0, 0.9999713, 0, 0, 0, 0.9999467, -0.0036550902, 2.2835014, -0.001961669)
-shape = SubResource("BoxShape3D_0hgyv")
+[node name="PlayerProtagonistCollisionShape" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.9999876, 0, 0, 0, 0.9999876, 0, 0, 0, 0.999977, -0.0006103542, 0.93581194, 0.0005040849)
+shape = SubResource("BoxShape3D_nvbmq")
