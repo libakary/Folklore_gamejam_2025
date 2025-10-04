@@ -23,9 +23,14 @@ globalVariables="*res://scripts/globalVariables.gd"
 [dialogic]
 
 directories/dch_directory={
-"Protag": "res://characters/Protag.dch"
+"Ada": "res://characters/Ada.dch",
+"Fox": "res://characters/Fox.dch",
+"Protag": "res://characters/Protag.dch",
+"Yeva": "res://characters/Yeva.dch"
 }
-directories/dtl_directory={}
+directories/dtl_directory={
+"helloWorld": "res://characters/helloWorld.dtl"
+}
 layout/style_directory={}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -63,6 +68,10 @@ audio/channel_defaults={
 audio/type_sound_bus="SFX"
 text/input_action="dialogic_default_action"
 text/autocolor_names=false
+glossary/default_case_sensitive=true
+layout/style_list=[]
+layout/default_style="Default"
+variables={}
 
 [display]
 
