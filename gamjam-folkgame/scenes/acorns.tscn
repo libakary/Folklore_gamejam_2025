@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://du6ykx423iqw3"]
+
+[ext_resource type="Texture2D" uid="uid://86nyisw861n1" path="res://assets/environment/tree - kuusk.png" id="1_cdfo3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1bd7c"]
+
+[node name="acorns" type="Node3D"]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_1bd7c")
+
+[node name="Sprite3D" type="Sprite3D" parent="RigidBody3D"]
+transform = Transform3D(0.14154595, 0, 0, 0, 0.11276218, 0, 0, 0, 0.55750763, 0, 0, 0)
+texture = ExtResource("1_cdfo3")
