@@ -1,3 +1,42 @@
-[gd_scene format=3 uid="uid://bmihl2tqxw2b5"]
+[gd_scene load_steps=5 format=3 uid="uid://c3nyuoq8vi3i4"]
+
+[ext_resource type="Texture2D" uid="uid://c7tbbapehwc1u" path="res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png" id="1_q320a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ufccv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q320a")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q320a"]
+size = Vector3(1.065979, 1.9141846, 0.17663574)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q320a"]
 
 [node name="Fox" type="Node3D"]
+
+[node name="Fox" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8099357, 0)
+text = "Fox"
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9633912, 0)
+sprite_frames = SubResource("SpriteFrames_ufccv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0055236816, 0.9553739, 0.00031375885)
+shape = SubResource("BoxShape3D_q320a")
+
+[node name="ShapeCast3D" type="ShapeCast3D" parent="CharacterBody3D"]
+transform = Transform3D(1.2393894, 0, 0, 0, 1.5827425, 0, 0, 0, 1.2393874, 0, 0.79959506, 0)
+shape = SubResource("CapsuleShape3D_q320a")
+target_position = Vector3(0, 0, 0)

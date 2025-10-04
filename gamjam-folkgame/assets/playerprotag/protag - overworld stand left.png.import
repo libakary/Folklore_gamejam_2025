@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://q18m35i10pod"
-path.s3tc="res://.godot/imported/protag - overworld stand left.png-8f31c17f537296cc602a0f475646f1fa.s3tc.ctex"
+path="res://.godot/imported/protag - overworld stand left.png-8f31c17f537296cc602a0f475646f1fa.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://assets/playerprotag/protag - overworld stand left.png"
-dest_files=["res://.godot/imported/protag - overworld stand left.png-8f31c17f537296cc602a0f475646f1fa.s3tc.ctex"]
+dest_files=["res://.godot/imported/protag - overworld stand left.png-8f31c17f537296cc602a0f475646f1fa.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

@@ -15,7 +15,9 @@ size = Vector3(0.69281006, 1.1917267, 1)
 [node name="Trees" type="Node3D"]
 script = ExtResource("1_hldw5")
 
-[node name="kuusk" type="RigidBody3D" parent="."]
+[node name="kuusk" type="StaticBody3D" parent="."]
+collision_layer = 2
+collision_mask = 2
 
 [node name="Sprite3D" type="Sprite3D" parent="kuusk"]
 texture = ExtResource("2_v4a6f")
