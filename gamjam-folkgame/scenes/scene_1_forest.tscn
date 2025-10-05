@@ -54,31 +54,26 @@ size = Vector3(9.920013, 0.03955078, 7.149597)
 material = SubResource("StandardMaterial3D_8odxw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.043646097, 0)
 shape = SubResource("WorldBoundaryShape3D_na1q6")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -1, 0, 0.9999999, -4.371139e-08, 0, 0.043646097, -3.3843336)
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -1, 0, 0.9999999, -4.371139e-08, 0, 0, -3.384)
 shape = SubResource("WorldBoundaryShape3D_na1q6")
 
 [node name="MainGameScreen" parent="." instance=ExtResource("1_0ofam")]
 
-[node name="Trees" parent="." instance=ExtResource("3_8odxw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.625131, 4.9275184, -1.3524137)
-kuusk = true
-
 [node name="Eva" parent="." instance=ExtResource("4_3axq4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.271174, -0.13248104, -0.85200906)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.271174, 0.07668644, -0.85200906)
 
 [node name="Fox" parent="." instance=ExtResource("5_4ntu6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2417936, -0.04273337, 0.8715444)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2417936, -0.08497733, 0.8715444)
 
 [node name="objects" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.6394806, 0)
 script = ExtResource("8_spcp4")
 
 [node name="Trees" parent="objects" instance=ExtResource("3_8odxw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.625131, 0.107337, -1.3524137)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.625131, -0.23574638, -1.3524137)
 kuusk = true
 
 [node name="acorns" parent="objects" instance=ExtResource("7_na1q6")]
