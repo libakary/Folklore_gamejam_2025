@@ -1,12 +1,22 @@
 join Protag left
+[voice path="res://assets/audio/they/4.wav" volume="0.0" bus="SFX"]
 Protag: Man, it sure is boring around here today.
-join Fox left
+join Fox right
+[voice path="res://assets/audio/fox/äaäh.wav" volume="0.0" bus="SFX"]
 Fox: My child, this peace is what all spirits strive for.
-Protag: Groan
+[voice path="res://assets/audio/they/2.wav" volume="0.0" bus="SFX"]
+Protag: *Groan*
+[voice path="res://assets/audio/fox/äah.wav" volume="0.0" bus="SFX"]
 Fox: Hah. Sorry, I’ll stop letting father possess me.
+[voice path="res://assets/audio/fox/ääaaah.wav" volume="0.0" bus="SFX"]
 Fox: But seriously, I think it’s nice to have some quiet here for once.
+[voice path="res://assets/audio/fox/äh.wav" volume="0.0" bus="SFX"]
 Fox: No tourists, hunters or “documentary makers” to drive out of the forest.
+[voice path="res://assets/audio/fox/hääh.wav" volume="0.0" bus="SFX"]
 Fox: Or mushroom gatherers, those are the worst.
+[voice path="res://assets/audio/they/5.wav" volume="0.0" bus="SFX"]
 Protag: Oh yeah, mushroomers are super persistent.
+[voice path="res://assets/audio/they/4.wav" volume="0.0" bus="SFX"]
 Protag: I honestly think some value mushrooms more than their own life.
+[voice path="res://assets/audio/they/6.wav" volume="0.0" bus="SFX"]
 Protag: Did you hear about the one from the mainland where it took the spirits a bear to scare her away?
