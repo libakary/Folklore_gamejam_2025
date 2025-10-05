@@ -10,6 +10,7 @@ size = Vector3(1, 0.37609863, 0.5198059)
 [node name="acorns" type="Node3D"]
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.39689636, 0)
 collision_layer = 4
 collision_mask = 7
 
@@ -19,6 +20,7 @@ shape = SubResource("BoxShape3D_1bd7c")
 
 [node name="Sprite3D" type="Sprite3D" parent="RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 0.505311, 0.86293733, 0, -0.86293733, 0.505311, 0, 0, 0)
+billboard = 1
 texture_filter = 2
 texture = ExtResource("1_cdfo3")
 

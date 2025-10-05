@@ -1,12 +1,12 @@
 extends Node3D
 
 var trees = preload("res://scenes/trees.tscn")
-var offset = 2.5
+var offsetX = 0
+var offsetZ = 0
 var pictureReady = 0
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	while  pictureReady < 10:
+	while  pictureReady < 0:
 		multInst()
 		pictureReady = pictureReady + 1
 	pass # Replace with function body.
@@ -16,15 +16,16 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	pass
 
-func inst(pos):
+func instTree(pos):
 	var instance = trees.instantiate()
-	instance.manyKuusk = true
+	instance.kuusk = true
 	instance.position = pos
 	add_child(instance)
-	offset = offset + 2.5
+	offsetX = randf_range(-30,30)
+	offsetZ = randf_range(-30,30)
 
 func multInst():
-	inst(Vector3(offset,0,0))
-	inst(Vector3(offset,0,1))
-	inst(Vector3(offset,0,-1))
-	inst(Vector3(offset,0,0))
+	instTree(Vector3(offsetX, 0,offsetZ))
+	instTree(Vector3(offsetX, 0,offsetZ))
+	instTree(Vector3(offsetX, 0,offsetZ))
+	instTree(Vector3(offsetX,0,offsetZ))
