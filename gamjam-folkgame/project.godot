@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="gamjam_folkgame"
-run/main_scene="uid://bqh4o7bcyvahp"
+run/main_scene="uid://cwujwqf867n80"
 config/features=PackedStringArray("4.5", "Mobile")
 config/icon="res://icon.svg"
 
