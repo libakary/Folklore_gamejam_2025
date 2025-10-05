@@ -15,7 +15,7 @@ animations = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q320a"]
-size = Vector3(2.5234003, 1.9916077, 0.17663574)
+size = Vector3(2.5234003, 1.9916077, 0.26556396)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q320a"]
 
@@ -36,7 +36,7 @@ texture_filter = 2
 sprite_frames = SubResource("SpriteFrames_ufccv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04853201, 0.99835896, 0.00031375885)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.04853201, 0.99835896, -0.002850294)
 shape = SubResource("BoxShape3D_q320a")
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="CharacterBody3D"]

@@ -15,7 +15,7 @@ animations = [{
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_kckqg"]
-size = Vector3(0.7800598, 1.8685913, 0.24017334)
+size = Vector3(2.1592274, 2.2389832, 0.37057495)
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_kckqg"]
 
@@ -27,6 +27,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7240508, 0)
 text = "Eva"
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.35897404, 0)
 collision_layer = 2
 collision_mask = 2
 
@@ -36,11 +37,11 @@ texture_filter = 2
 sprite_frames = SubResource("SpriteFrames_oqrlm")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00070667267, 0.94166315, -0.0011258125)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.051416397, 0.7564673, 0.00062954426)
 shape = SubResource("BoxShape3D_kckqg")
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="CharacterBody3D"]
-transform = Transform3D(1.080477, 0, 0, 0, 1.2756085, 0, 0, 0, 1.0912572, 0, 0.7175914, 0)
+transform = Transform3D(1.080477, 0, 0, 0, 1.8114308, 0, 0, 0, 1.0912572, -0.70085406, 0.5594719, 0)
 shape = SubResource("CapsuleShape3D_kckqg")
 target_position = Vector3(0, 0, 0)
 collision_mask = 2

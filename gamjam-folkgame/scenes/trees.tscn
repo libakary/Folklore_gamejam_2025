@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dgo6dudvb6wj3"]
+[gd_scene load_steps=8 format=3 uid="uid://dgo6dudvb6wj3"]
 
 [ext_resource type="Script" uid="uid://c66mujlnffcqe" path="res://scripts/trees.gd" id="1_hldw5"]
 [ext_resource type="Texture2D" uid="uid://86nyisw861n1" path="res://assets/environment/tree - kuusk.png" id="2_v4a6f"]
+[ext_resource type="Texture2D" uid="uid://csqancgk8js6x" path="res://assets/environment/tree - many kuusk.png" id="3_v4a6f"]
+[ext_resource type="Texture2D" uid="uid://dwqlbjb40s0dl" path="res://assets/environment/treemanyleaftrees.png" id="4_cy38b"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2g2b4"]
 size = Vector3(1.645916, 1.130249, 1)
@@ -34,3 +36,12 @@ shape = SubResource("BoxShape3D_cy38b")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="kuusk"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15990496, -2.5008216, 0)
 shape = SubResource("BoxShape3D_hldw5")
+
+[node name="manyKuusk" type="Sprite3D" parent="."]
+texture_filter = 2
+texture = ExtResource("3_v4a6f")
+
+[node name="manyLeaf" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54161704, 0)
+texture_filter = 2
+texture = ExtResource("4_cy38b")

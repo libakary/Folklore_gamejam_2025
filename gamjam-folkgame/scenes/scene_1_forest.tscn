@@ -1,8 +1,9 @@
-[gd_scene load_steps=13 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=14 format=3 uid="uid://bqh4o7bcyvahp"]
 
 [ext_resource type="Script" uid="uid://bguobbov1fplr" path="res://scenes/inputManager.gd" id="1_0kj01"]
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
 [ext_resource type="Texture2D" uid="uid://ctbigwi0lpdfy" path="res://assets/environment/forest floor texture.png" id="1_2f638"]
+[ext_resource type="Script" uid="uid://6v4emlexj4nw" path="res://scenes/background.gd" id="2_frrep"]
 [ext_resource type="PackedScene" uid="uid://dgo6dudvb6wj3" path="res://scenes/trees.tscn" id="3_8odxw"]
 [ext_resource type="PackedScene" uid="uid://bjxmkt2o3y7r1" path="res://scenes/eva.tscn" id="4_3axq4"]
 [ext_resource type="PackedScene" uid="uid://c3nyuoq8vi3i4" path="res://scenes/fox.tscn" id="5_4ntu6"]
@@ -37,16 +38,25 @@ environment = SubResource("Environment_2f638")
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
 shadow_enabled = true
 
+[node name="background" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.044795, 4.7119794, -16.828316)
+script = ExtResource("2_frrep")
+
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 transform = Transform3D(5.2301435, 0, 0, 0, 1, 0, 0, 0, 5.5660496, 0.99607253, -0.15225643, 1.6493952)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.44047546, 0, 0.18661493)
 use_collision = true
-size = Vector3(2.8284912, 0.03955078, 2.8571777)
+size = Vector3(9.920013, 0.03955078, 7.149597)
 material = SubResource("StandardMaterial3D_8odxw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.043646097, 0)
+shape = SubResource("WorldBoundaryShape3D_na1q6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -1, 0, 0.9999999, -4.371139e-08, 0, 0.043646097, -3.3843336)
 shape = SubResource("WorldBoundaryShape3D_na1q6")
 
 [node name="MainGameScreen" parent="." instance=ExtResource("1_0ofam")]
