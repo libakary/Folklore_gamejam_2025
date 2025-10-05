@@ -62,12 +62,9 @@ shape = SubResource("WorldBoundaryShape3D_na1q6")
 
 [node name="MainGameScreen" parent="." instance=ExtResource("1_0ofam")]
 
-
 [node name="Trees" parent="." instance=ExtResource("3_8odxw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.625131, 4.9275184, -1.3524137)
 kuusk = true
-manyKuusk = true
-manyLeaf = true
 
 [node name="Eva" parent="." instance=ExtResource("4_3axq4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.271174, -0.13248104, -0.85200906)
