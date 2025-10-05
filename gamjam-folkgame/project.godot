@@ -32,7 +32,11 @@ directories/dch_directory={
 directories/dtl_directory={
 "A1S1D1": "res://timelines/A1S1D1.dtl",
 "A1S1D2": "res://timelines/A1S1D2.dtl",
-"helloWorld": "res://timelines/helloWorld.dtl"
+"A1S3D1": "res://timelines/A1S3D1.dtl",
+"A1S3D2": "res://timelines/A1S3D2.dtl",
+"A1S4": "res://timelines/A1S4.dtl",
+"helloWorld": "res://timelines/helloWorld.dtl",
+"timeline": "res://timelines/A1S2.dtl"
 }
 layout/style_directory={
 "": "res://themes/New_File.tres",
@@ -65,6 +69,12 @@ audio/channel_defaults={
 "volume": 0.0
 },
 "music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+},
+"new_channel_name": {
 "audio_bus": "",
 "fade_length": 0.0,
 "loop": true,

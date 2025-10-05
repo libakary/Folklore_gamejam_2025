@@ -16,3 +16,23 @@ Protag: Humans often take their “cars” into forests and just roll and bury e
 Eva: That’s true, some sadly don’t appreciate other life enough.
 [voice path="res://assets/audio/ieva/3.wav" volume="0.0" bus="SFX"]
 Eva: But I think some are nice. Even cute.
+You hear a distant shout from Reinuvader.
+[voice path="res://assets/audio/fox/ääaaah.wav" volume="0.0"]
+Fox: We *know* you’ve been sometimes looking at them with a sparkle in your eyes, haha. You don’t have to remind us.
+- I don’t know what you see in them, but whatever.
+	[voice path="res://assets/audio/they/4.wav" volume="0.0"]
+	Protag: I don’t know what you see in them, but whatever.
+	[voice path="res://assets/audio/ieva/3.wav" volume="0.0"]
+	Eva: …
+- What do you see in them anyway? They seem to only cause trouble.
+	[voice path="res://assets/audio/they/4.wav" volume="0.0"]
+	Protag: What do you see in them anyway? They seem to only cause trouble.
+	[voice path="res://assets/audio/ieva/6.wav" volume="0.0"]
+	Eva: They moved out to make themselves a better, more comfortable life, but still keep coming back home. It’s kind of cute.
+	[voice path="res://assets/audio/ieva/3.wav" volume="0.0"]
+	Eva: And some have created interesting fashion in the process…
+- How can you like them like *that*?
+	[voice path="res://assets/audio/they/4.wav" volume="0.0"]
+	Protag: How can you like them like *that*?
+	[voice path="res://assets/audio/ieva/2.wav" volume="0.0"]
+	Eva: Opposites attract. Their styles are strange, but alluring.
