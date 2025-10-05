@@ -6,16 +6,57 @@
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
-"sound_moods": {},
+"sound_moods": {
+"Mood 1": {
+"mode": 0,
+"name": "Mood 1",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 0.0,
+"sound_path": "res://assets/audio/fox/äääh.wav",
+"volume_base": 0.0,
+"volume_variance": 0.0
+},
+"Mood 2": {
+"mode": 0,
+"name": "Mood 2",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 0.0,
+"sound_path": "res://assets/audio/fox/äaäh.wav",
+"volume_base": 0.0,
+"volume_variance": 0.0
+},
+"Mood 3": {
+"mode": 0,
+"name": "Mood 3",
+"pitch_base": 1.0,
+"pitch_variance": 0.0,
+"skip_characters": 0.0,
+"sound_path": "res://assets/audio/fox/hääh.wav",
+"volume_base": 0.0,
+"volume_variance": 0.0
+}
+},
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Idle",
 &"description": "",
 &"display_name": "Fox",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Idle": {
+"export_overrides": {
+"image": "\"res://assets/NPCs/characterFOXreinuvader.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 1,
+"scene": ""
+}
+},
 &"scale": 1.0
 }
