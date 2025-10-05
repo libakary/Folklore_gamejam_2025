@@ -11,9 +11,10 @@ func _process(_delta: float) -> void:
 	pass
 
 func dialogStart():
-	#get_tree().paused = true
 	globalVariables.canPlayerMove = false
-	Dialogic.start("helloWorld")
+	if globalVariables.dialogueProg < 1 :
+		Dialogic.start("A1S1D1")
+		globalVariables.dialogueProg += 1
 	get_viewport().set_input_as_handled()
 	Dialogic.timeline_ended.connect(end)
 
