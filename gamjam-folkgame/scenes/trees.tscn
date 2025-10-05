@@ -7,18 +7,19 @@
 [ext_resource type="Texture2D" uid="uid://dwqlbjb40s0dl" path="res://assets/environment/treemanyleaftrees.png" id="4_cy38b"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2g2b4"]
-size = Vector3(1.645916, 0.6364136, 1)
+size = Vector3(1.434164, 0.6364136, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cy38b"]
-size = Vector3(0.9256134, 1, 1)
+size = Vector3(0.74286366, 1, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_hldw5"]
-size = Vector3(0.69281006, 1.1917267, 1)
+size = Vector3(0.5757904, 1.1917267, 1)
 
 [node name="Trees" type="Node3D"]
 script = ExtResource("1_hldw5")
 
 [node name="kuusk" type="StaticBody3D" parent="."]
+visible = false
 collision_layer = 8
 collision_mask = 8
 
@@ -39,7 +40,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15990496, -2.5008216, 0)
 shape = SubResource("BoxShape3D_hldw5")
 
 [node name="tree" type="StaticBody3D" parent="."]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6597991, 0)
 collision_layer = 8
 collision_mask = 8
 
@@ -48,22 +49,24 @@ texture_filter = 2
 texture = ExtResource("3_cy38b")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="tree"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2371962, -4.186288, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12329936, -6.279365, 0)
 shape = SubResource("BoxShape3D_2g2b4")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="tree"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17046809, -3.5912294, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14396024, -5.4654226, 0)
 shape = SubResource("BoxShape3D_cy38b")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="tree"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15990496, -2.5008216, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.049966812, -4.3561053, 0)
 shape = SubResource("BoxShape3D_hldw5")
 
 [node name="manyKuusk" type="Sprite3D" parent="."]
+visible = false
 texture_filter = 2
 texture = ExtResource("3_v4a6f")
 
 [node name="manyLeaf" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.54161704, 0)
+visible = false
 texture_filter = 2
 texture = ExtResource("4_cy38b")
