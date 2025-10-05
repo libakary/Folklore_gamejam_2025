@@ -4,18 +4,23 @@ extends Node3D
 @export var manyKuusk: bool
 @export var manyLeaf: bool
 
+var tree = 0
+
 #var plants_dict = {kuusk: false,  manyKuusk: false, manyLeaf: false}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$kuusk.hide()
+	$tree.hide()
 	$manyKuusk.hide()
 	$manyLeaf.hide()
-	if kuusk:
+	if tree == 1:
 		$kuusk.show()
-	elif manyKuusk:
+	elif tree == 2:
+		$tree.show()
+	elif tree == 3:
 		$manyKuusk.show()
-	elif manyLeaf:
+	elif tree == 4:
 		$manyLeaf.show()
 	pass # Replace with function body.
 

@@ -18,7 +18,7 @@ func _process(_delta: float) -> void:
 
 func inst(pos):
 	var instance = trees.instantiate()
-	instance.manyKuusk = true
+	instance.tree = randi_range(3,4)
 	instance.position = pos
 	add_child(instance)
 	offset = offset + 2.5
