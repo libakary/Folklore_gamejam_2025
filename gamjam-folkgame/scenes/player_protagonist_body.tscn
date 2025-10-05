@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://clxgfcxjaqh35"]
+[gd_scene load_steps=7 format=3 uid="uid://clxgfcxjaqh35"]
 
 [ext_resource type="Script" uid="uid://bjsynlpfhvt1w" path="res://scripts/player_protagonist_body.gd" id="1_0hgyv"]
 [ext_resource type="Texture2D" uid="uid://q18m35i10pod" path="res://assets/playerprotag/protag - overworld stand left.png" id="2_0hgyv"]
+[ext_resource type="Texture2D" uid="uid://br1fx7im6bkw6" path="res://assets/playerprotag/protag - walk left1 PLACEHOLDER.png" id="3_1njgr"]
+[ext_resource type="Texture2D" uid="uid://dg76ybah88w4i" path="res://assets/playerprotag/protag - walk left2 PLACEHOLDER.png" id="4_sk00q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hgyv"]
 animations = [{
@@ -10,8 +12,30 @@ animations = [{
 "texture": ExtResource("2_0hgyv")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1njgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sk00q")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1njgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sk00q")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 3.0
 }]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_nvbmq"]
@@ -27,6 +51,9 @@ script = ExtResource("1_0hgyv")
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.99999964, -0.0038623794, 0.93397343, 0)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_0hgyv")
+animation = &"walk_right"
+autoplay = "idle"
+frame_progress = 0.6465862
 
 [node name="PlayerProtagonistCollisionShape" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.99997395, 0, 0, 0, 0.99997395, 0, 0, 0, 0.99995166, -0.0006103538, 0.93561286, -0.0068073496)
