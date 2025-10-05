@@ -14,4 +14,6 @@ func _input(event):
 	if event.is_action_pressed("interact"):
 		if $Fox.interactionPossible:
 			print("input")
+		elif $Eva.interactionPossible:
+			print("input")
 		pass

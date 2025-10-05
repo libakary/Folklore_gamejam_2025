@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bmicdu7014av5"
+path="res://.godot/imported/Title Screen - Saaremaa Valss.ogg-846dc3571f8faec6fc0bcf7ea3785409.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/music/Title Screen - Saaremaa Valss.ogg"
+dest_files=["res://.godot/imported/Title Screen - Saaremaa Valss.ogg-846dc3571f8faec6fc0bcf7ea3785409.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
