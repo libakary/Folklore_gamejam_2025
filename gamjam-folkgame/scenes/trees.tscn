@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dwqlbjb40s0dl" path="res://assets/environment/treemanyleaftrees.png" id="4_cy38b"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2g2b4"]
-size = Vector3(1.645916, 1.130249, 1)
+size = Vector3(1.645916, 0.6364136, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_cy38b"]
 size = Vector3(0.9256134, 1, 1)
@@ -18,15 +18,15 @@ size = Vector3(0.69281006, 1.1917267, 1)
 script = ExtResource("1_hldw5")
 
 [node name="kuusk" type="StaticBody3D" parent="."]
-collision_layer = 2
-collision_mask = 2
+collision_layer = 8
+collision_mask = 8
 
 [node name="Sprite3D" type="Sprite3D" parent="kuusk"]
 texture_filter = 1
 texture = ExtResource("2_v4a6f")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="kuusk"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2371962, -4.4332056, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2371962, -4.186288, 0)
 shape = SubResource("BoxShape3D_2g2b4")
 
 [node name="CollisionShape3D4" type="CollisionShape3D" parent="kuusk"]

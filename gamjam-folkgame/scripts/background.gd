@@ -6,7 +6,7 @@ var pictureReady = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	while  pictureReady < 10:
+	while  pictureReady < 30:
 		multInst()
 		pictureReady = pictureReady + 1
 	pass # Replace with function body.
