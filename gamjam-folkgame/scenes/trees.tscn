@@ -18,8 +18,8 @@ size = Vector3(0.69281006, 1.1917267, 1)
 script = ExtResource("1_hldw5")
 
 [node name="kuusk" type="StaticBody3D" parent="."]
-collision_layer = 2
-collision_mask = 2
+collision_layer = 8
+collision_mask = 8
 
 [node name="Sprite3D" type="Sprite3D" parent="kuusk"]
 texture_filter = 1
