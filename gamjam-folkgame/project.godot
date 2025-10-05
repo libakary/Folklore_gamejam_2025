@@ -25,14 +25,14 @@ SaveManager="*res://scripts/save.gd"
 
 directories/dch_directory={
 "Ada": "res://characters/Ada.dch",
+"Eva": "res://characters/Eva.dch",
 "Fox": "res://characters/Fox.dch",
-"Protag": "res://characters/Protag.dch",
-"Yeva": "res://characters/Eva.dch"
+"Protag": "res://characters/Protag.dch"
 }
 directories/dtl_directory={
 "A1S1D1": "res://timelines/A1S1D1.dtl",
 "A1S1D2": "res://timelines/A1S1D2.dtl",
-"timelines/helloWorld": "res://timelines/helloWorld.dtl"
+"helloWorld": "res://timelines/helloWorld.dtl"
 }
 layout/style_directory={
 "": "res://themes/New_File.tres",
