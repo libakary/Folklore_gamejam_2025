@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://c3nyuoq8vi3i4" path="res://scenes/fox.tscn" id="5_4ntu6"]
 [ext_resource type="PackedScene" uid="uid://du6ykx423iqw3" path="res://scenes/acorns.tscn" id="7_na1q6"]
 [ext_resource type="Script" uid="uid://bbj3owiwabo5a" path="res://scripts/objects.gd" id="8_spcp4"]
-[ext_resource type="AudioStream" uid="uid://bmicdu7014av5" path="res://assets/music/Title Screen - Saaremaa Valss.ogg" id="10_xt3cc"]
+[ext_resource type="AudioStream" uid="uid://cuhchrqtmlm0l" path="res://assets/music/Forest - Wandering.ogg" id="10_xt3cc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
