@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://clxgfcxjaqh35"]
+[gd_scene load_steps=8 format=3 uid="uid://clxgfcxjaqh35"]
 
 [ext_resource type="Script" uid="uid://bjsynlpfhvt1w" path="res://scripts/player_protagonist_body.gd" id="1_0hgyv"]
 [ext_resource type="Texture2D" uid="uid://q18m35i10pod" path="res://assets/playerprotag/protag - overworld stand left.png" id="2_0hgyv"]
 [ext_resource type="Texture2D" uid="uid://br1fx7im6bkw6" path="res://assets/playerprotag/protag - walk left1 PLACEHOLDER.png" id="3_1njgr"]
 [ext_resource type="Texture2D" uid="uid://dg76ybah88w4i" path="res://assets/playerprotag/protag - walk left2 PLACEHOLDER.png" id="4_sk00q"]
+[ext_resource type="AudioStream" uid="uid://caux7aac0oydt" path="res://assets/audio/walking/grass2.wav" id="5_sk00q"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0hgyv"]
 animations = [{
@@ -46,3 +47,7 @@ autoplay = "idle"
 [node name="PlayerProtagonistCollisionShape" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.99997395, 0, 0, 0, 0.99997395, 0, 0, 0, 0.99995166, -0.0006103538, 0.93561286, -0.0068073496)
 shape = SubResource("BoxShape3D_nvbmq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_sk00q")
+bus = &"SFX"

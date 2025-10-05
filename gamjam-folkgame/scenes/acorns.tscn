@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://du6ykx423iqw3"]
+[gd_scene load_steps=9 format=3 uid="uid://du6ykx423iqw3"]
 
 [ext_resource type="Script" uid="uid://dknyookheo42f" path="res://scripts/acorns.gd" id="1_1bd7c"]
 [ext_resource type="Texture2D" uid="uid://dqi4b7p7r4cu0" path="res://assets/environment/itemacornfromground.png" id="1_cdfo3"]
+[ext_resource type="AudioStream" uid="uid://c42uhbavfsqjk" path="res://assets/audio/nut2.wav" id="3_rxh6o"]
 
 [sub_resource type="Animation" id="Animation_rxh6o"]
 length = 0.001
@@ -127,3 +128,6 @@ transform = Transform3D(1.7008353, 0, 0, 0, 1, 0, 0, 0, 1.6017483, 0, 0, 0)
 shape = SubResource("SphereShape3D_cdfo3")
 target_position = Vector3(0, 0, 0)
 collision_mask = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_rxh6o")
