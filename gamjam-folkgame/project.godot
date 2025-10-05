@@ -27,7 +27,7 @@ directories/dch_directory={
 "Ada": "res://characters/Ada.dch",
 "Fox": "res://characters/Fox.dch",
 "Protag": "res://characters/Protag.dch",
-"Yeva": "res://characters/Eva.dch"
+"Eva": "res://characters/Eva.dch"
 }
 directories/dtl_directory={
 "A1S1D1": "res://timelines/A1S1D1.dtl",
