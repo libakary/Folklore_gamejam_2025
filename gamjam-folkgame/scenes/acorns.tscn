@@ -1,30 +1,129 @@
-[gd_scene load_steps=4 format=3 uid="uid://du6ykx423iqw3"]
+[gd_scene load_steps=8 format=3 uid="uid://du6ykx423iqw3"]
 
+[ext_resource type="Script" uid="uid://dknyookheo42f" path="res://scenes/acorns.gd" id="1_1bd7c"]
 [ext_resource type="Texture2D" uid="uid://dqi4b7p7r4cu0" path="res://assets/environment/itemacornfromground.png" id="1_cdfo3"]
 
+[sub_resource type="Animation" id="Animation_1bd7c"]
+resource_name = "acornPickUp"
+length = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CollisionShape3D:disabled")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ShapeCast3D:enabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite3D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_rxh6o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape3D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ShapeCast3D:enabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3pkrf"]
+_data = {
+&"RESET": SubResource("Animation_rxh6o"),
+&"acornPickUp": SubResource("Animation_1bd7c")
+}
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_1bd7c"]
-size = Vector3(1, 0.37609863, 0.5198059)
+size = Vector3(1, 0.5811157, 0.5198059)
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_cdfo3"]
 
 [node name="acorns" type="Node3D"]
+script = ExtResource("1_1bd7c")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../RigidBody3D")
+libraries = {
+&"": SubResource("AnimationLibrary_3pkrf")
+}
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.39689636, 0)
 collision_layer = 4
 collision_mask = 7
 
+[node name="Label3D" type="Label3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3259735, 0.16577148)
+billboard = 1
+text = "Acorn"
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0038452148, 0.051742554)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.10635376, 0.051742554)
 shape = SubResource("BoxShape3D_1bd7c")
 
 [node name="Sprite3D" type="Sprite3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 0.505311, 0.86293733, 0, -0.86293733, 0.505311, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, -0.011955231, 0.9999286, 0, -0.9999286, -0.011955231, 0, 0, 0)
 billboard = 1
 texture_filter = 2
 texture = ExtResource("1_cdfo3")
 
 [node name="ShapeCast3D" type="ShapeCast3D" parent="RigidBody3D"]
-transform = Transform3D(1.206712, 0, 0, 0, 1, 0, 0, 0, 1.1722602, 0, 0, 0)
+transform = Transform3D(1.7008353, 0, 0, 0, 1, 0, 0, 0, 1.6017483, 0, 0, 0)
 shape = SubResource("SphereShape3D_cdfo3")
 target_position = Vector3(0, 0, 0)
+collision_mask = 2

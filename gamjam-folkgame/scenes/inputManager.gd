@@ -1,5 +1,6 @@
 extends Node3D
 
+@onready var acorns: Node3D = $acorns
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,6 +15,7 @@ func _process(_delta: float) -> void:
 
 func _input(event):
 	if event.is_action_pressed("interact"):
+		
 		if $Fox.interactionPossible:
 			print("input")
 		elif $Eva.interactionPossible:
