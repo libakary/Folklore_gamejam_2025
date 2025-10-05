@@ -32,7 +32,7 @@ directories/dch_directory={
 directories/dtl_directory={
 "A1S1D1": "res://timelines/A1S1D1.dtl",
 "A1S1D2": "res://timelines/A1S1D2.dtl",
-"timelines/helloWorld": "res://timelines/helloWorld.dtl"
+"helloWorld": "res://timelines/helloWorld.dtl"
 }
 layout/style_directory={
 "": "res://themes/New_File.tres",
