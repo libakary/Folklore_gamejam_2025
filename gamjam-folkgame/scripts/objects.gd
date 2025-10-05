@@ -7,7 +7,7 @@ var offsetZ = 0
 var pictureReady = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	while  pictureReady < 30:
+	while  pictureReady < 100:
 		multInst()
 		pictureReady = pictureReady + 1
 	pass # Replace with function body.
@@ -39,5 +39,5 @@ func multInst():
 	instAcorn(Vector3(offsetX, 0,offsetZ))
 	instTree(Vector3(offsetX,0,offsetZ))
 func offsetChange():
-	offsetX = randf_range(-30,30)
-	offsetZ = randf_range(-30,30)
+	offsetX = randf_range(-100,100)
+	offsetZ = randf_range(-100,100)
