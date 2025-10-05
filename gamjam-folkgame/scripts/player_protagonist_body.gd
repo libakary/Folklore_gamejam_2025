@@ -4,7 +4,7 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 @onready var player_protagonist_animated: AnimatedSprite3D = $PlayerProtagonistAnimated
-
+@onready var player_protagonist_walking_sound = $AudioStreamPlayer2D
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -28,6 +28,7 @@ func _physics_process(delta):
 		player_protagonist_animated.play("idle")
 	else:
 		player_protagonist_animated.play("walk")
+		player_protagonist_walking_sound.play()
 		
 	
 	if direction:

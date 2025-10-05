@@ -19,7 +19,7 @@
 &"portraits": {
 "New portrait": {
 "export_overrides": {
-"image": "\"res://assets/playerprotag/protag - overworld stand PLACEHOLDER.png\""
+"image": "\"res://assets/NPCs/character-eva-yevaWIPplaceholder.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

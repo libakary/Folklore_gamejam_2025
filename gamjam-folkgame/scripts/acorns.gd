@@ -20,6 +20,7 @@ func _process(_delta: float) -> void:
 func _input(event):
 	if event.is_action_pressed("interact"):
 		if interactionPossible:
+			
 			animation_player.play("acornPickUp")
 			acorns += 1
 			print("acorn")
