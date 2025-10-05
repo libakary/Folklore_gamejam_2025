@@ -36,6 +36,7 @@ directories/dtl_directory={
 }
 layout/style_directory={
 "": "res://themes/New_File.tres",
+"Fox": "res://themes/Fox.tres",
 "Theme": "res://themes/New_File.tres"
 }
 extensions_folder="res://addons/dialogic_additions"

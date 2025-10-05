@@ -1,10 +1,18 @@
 join Eva left
+[voice path="res://assets/audio/ieva/4.wav" volume="0.0" bus="SFX"]
 Eva: Have you looked at all the beautiful mushrooms already growing here?
+[voice path="res://assets/audio/ieva/3.wav" volume="0.0" bus="SFX"]
 Eva: Gifts of the forests for all creatures to take.
+[voice path="res://assets/audio/ieva/6.wav" volume="0.0" bus="SFX"]
 Eva: And they are delicious.
+[voice path="res://assets/audio/ieva/2.wav" volume="0.0" bus="SFX"]
 Eva: I don’t blame humans for going to great lengths every year to obtain them.
 join Protag right
+[voice path="res://assets/audio/they/5.wav" volume="0.0" bus="SFX"]
 Protag: But some of them aren’t really grateful.
+[voice path="res://assets/audio/they/2.wav" volume="0.0" bus="SFX"]
 Protag: Humans often take their “cars” into forests and just roll and bury everything under them, and it takes a whole tree to stop them.
+[voice path="res://assets/audio/ieva/4.wav" volume="0.0" bus="SFX"]
 Eva: That’s true, some sadly don’t appreciate other life enough.
+[voice path="res://assets/audio/ieva/3.wav" volume="0.0" bus="SFX"]
 Eva: But I think some are nice. Even cute.
