@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dgo6dudvb6wj3"]
+[gd_scene load_steps=9 format=3 uid="uid://dgo6dudvb6wj3"]
 
 [ext_resource type="Script" uid="uid://c66mujlnffcqe" path="res://scripts/trees.gd" id="1_hldw5"]
 [ext_resource type="Texture2D" uid="uid://86nyisw861n1" path="res://assets/environment/tree - kuusk.png" id="2_v4a6f"]
+[ext_resource type="Texture2D" uid="uid://cqtm222cgjw30" path="res://assets/environment/tree - other.png" id="3_cy38b"]
 [ext_resource type="Texture2D" uid="uid://csqancgk8js6x" path="res://assets/environment/tree - many kuusk.png" id="3_v4a6f"]
 [ext_resource type="Texture2D" uid="uid://dwqlbjb40s0dl" path="res://assets/environment/treemanyleaftrees.png" id="4_cy38b"]
 
@@ -34,6 +35,27 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17046809, -3.5912294, 0)
 shape = SubResource("BoxShape3D_cy38b")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="kuusk"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15990496, -2.5008216, 0)
+shape = SubResource("BoxShape3D_hldw5")
+
+[node name="tree" type="StaticBody3D" parent="."]
+visible = false
+collision_layer = 8
+collision_mask = 8
+
+[node name="Sprite3D" type="Sprite3D" parent="tree"]
+texture_filter = 2
+texture = ExtResource("3_cy38b")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="tree"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2371962, -4.186288, 0)
+shape = SubResource("BoxShape3D_2g2b4")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="tree"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17046809, -3.5912294, 0)
+shape = SubResource("BoxShape3D_cy38b")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="tree"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15990496, -2.5008216, 0)
 shape = SubResource("BoxShape3D_hldw5")
 

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxej6rkv6gbov"]
+
+[ext_resource type="Texture2D" uid="uid://drhatcywbasbc" path="res://assets/environment/forest - bush.png" id="1_lad4k"]
+
+[node name="Bush" type="Node3D"]
+
+[node name="BushSprite" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17520088, 0.6689321, -0.32070303)
+texture_filter = 2
+texture = ExtResource("1_lad4k")

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://mi02cjklfp21"]
+
+[ext_resource type="Texture2D" uid="uid://civlcergoqgh5" path="res://assets/environment/forest grass patch 1.png" id="1_e1kak"]
+[ext_resource type="Texture2D" uid="uid://dis57wlfc333d" path="res://assets/environment/forest grass patch 2.png" id="2_3kunl"]
+[ext_resource type="Texture2D" uid="uid://be3k146wj888y" path="res://assets/environment/forest grass patch 3.png" id="3_u68v2"]
+
+[node name="Grass" type="Node3D"]
+
+[node name="GrassSprite1" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.24080348, 0.9194076, -0.4407878)
+texture = ExtResource("1_e1kak")
+
+[node name="GrassSprite2" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.121448636, 0.46370125, -0.2223103)
+texture = ExtResource("2_3kunl")
+
+[node name="GrassSprite3" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16960937, 0.64758277, -0.3104682)
+texture_filter = 2
+texture = ExtResource("3_u68v2")

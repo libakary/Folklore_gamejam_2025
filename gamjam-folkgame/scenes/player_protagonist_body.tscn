@@ -51,9 +51,8 @@ script = ExtResource("1_0hgyv")
 transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.99999964, -0.0038623794, 0.93397343, 0)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_0hgyv")
-animation = &"walk_right"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.6465862
 
 [node name="PlayerProtagonistCollisionShape" type="CollisionShape3D" parent="."]
 transform = Transform3D(0.99997395, 0, 0, 0, 0.99997395, 0, 0, 0, 0.99995166, -0.0006103538, 0.93561286, -0.0068073496)

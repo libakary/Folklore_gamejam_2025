@@ -2,20 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqtm222cgjw30"
-path="res://.godot/imported/tree - other.png-1c31c2289dda2bdb5ca16c672a660c4c.ctex"
+uid="uid://ctp1y070exiae"
+path.s3tc="res://.godot/imported/stick1.png-99d1eff2c9c60ff0ea8db579fd4aeec1.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://assets/environment/tree - other.png"
-dest_files=["res://.godot/imported/tree - other.png-1c31c2289dda2bdb5ca16c672a660c4c.ctex"]
+source_file="res://assets/items/stick1.png"
+dest_files=["res://.godot/imported/stick1.png-99d1eff2c9c60ff0ea8db579fd4aeec1.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0

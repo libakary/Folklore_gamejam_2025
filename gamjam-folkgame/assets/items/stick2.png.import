@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqtm222cgjw30"
-path="res://.godot/imported/tree - other.png-1c31c2289dda2bdb5ca16c672a660c4c.ctex"
+uid="uid://bbujitudv6068"
+path="res://.godot/imported/stick2.png-e1af7b703f3efc163369c51217573e04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/environment/tree - other.png"
-dest_files=["res://.godot/imported/tree - other.png-1c31c2289dda2bdb5ca16c672a660c4c.ctex"]
+source_file="res://assets/items/stick2.png"
+dest_files=["res://.godot/imported/stick2.png-e1af7b703f3efc163369c51217573e04.ctex"]
 
 [params]
 
@@ -23,7 +23,7 @@ compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -37,4 +37,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
