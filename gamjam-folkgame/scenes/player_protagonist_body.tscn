@@ -38,7 +38,7 @@ collision_mask = 3
 script = ExtResource("1_0hgyv")
 
 [node name="PlayerProtagonistAnimated" type="AnimatedSprite3D" parent="."]
-transform = Transform3D(0.9999998, 0, 0, 0, 0.9999998, 0, 0, 0, 0.99999964, -0.0038623794, 0.93397343, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0038623794, 0.93397343, 0)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_0hgyv")
 animation = &"walk"

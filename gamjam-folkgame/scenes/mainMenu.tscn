@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cwujwqf867n80"]
+[gd_scene load_steps=3 format=3 uid="uid://cwujwqf867n80"]
 
 [ext_resource type="Script" uid="uid://bkdxvvr0lna61" path="res://scripts/main_menu.gd" id="1_3d1i7"]
+[ext_resource type="Texture2D" uid="uid://wull4lqa2gm6" path="res://assets/UI/main menu visual for now.png" id="2_3d1i7"]
 
 [node name="mainMenu" type="CanvasLayer"]
 script = ExtResource("1_3d1i7")
@@ -13,54 +14,66 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ColorRect" type="ColorRect" parent="Control"]
+[node name="TextureRect" type="TextureRect" parent="Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.6192833, 0.73, 0.4745, 1)
+texture = ExtResource("2_3d1i7")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
-process_mode = 3
+[node name="Label" type="Label" parent="."]
+visible = false
+anchors_preset = -1
+anchor_left = 0.1109375
+anchor_top = 0.21851853
+anchor_right = 0.41979167
+anchor_bottom = 0.41203704
+theme_type_variation = &"HeaderLarge"
+text = "Nimetu"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = -1
+anchor_left = 0.1171875
+anchor_top = 0.45694444
+anchor_right = 0.60546875
+anchor_bottom = 0.8472222
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="Panel"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -178.0
-offset_top = -83.5
-offset_right = 178.0
-offset_bottom = 83.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Play" type="Button" parent="Control/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+process_mode = 3
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3008
+anchor_right = 0.6634667
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Play" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 6
 theme_override_font_sizes/font_size = 32
 text = "Play"
 
-[node name="Quit" type="Button" parent="Control/VBoxContainer"]
+[node name="Quit" type="Button" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 6
 theme_override_font_sizes/font_size = 32
 text = "Quit"
 
-[node name="Label" type="Label" parent="."]
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -844.0
-offset_right = 844.0
-offset_bottom = 348.0
-grow_horizontal = 2
-theme_type_variation = &"HeaderLarge"
-text = "Nimetu"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[connection signal="pressed" from="Control/VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

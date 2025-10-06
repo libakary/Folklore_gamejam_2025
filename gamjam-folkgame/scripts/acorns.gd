@@ -1,7 +1,6 @@
 extends Node3D
 
 var interactionPossible = false
-var acorns = 0
 @onready var Cast: ShapeCast3D = $RigidBody3D/ShapeCast3D
 @onready var acorn: Label3D = $RigidBody3D/Label3D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
@@ -22,7 +21,7 @@ func _input(event):
 		if interactionPossible:
 			
 			animation_player.play("acornPickUp")
-			acorns += 1
+			globalVariables.acorns += 1
 			print("acorn")
 			pass
 			
