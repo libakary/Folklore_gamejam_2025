@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://bqh4o7bcyvahp"]
+[gd_scene load_steps=16 format=3 uid="uid://bqh4o7bcyvahp"]
 
 [ext_resource type="Script" uid="uid://bguobbov1fplr" path="res://scripts/inputManager.gd" id="1_0kj01"]
 [ext_resource type="PackedScene" uid="uid://yxdm4m0qfpu" path="res://scenes/main_game_screen.tscn" id="1_0ofam"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c3nyuoq8vi3i4" path="res://scenes/fox.tscn" id="5_4ntu6"]
 [ext_resource type="PackedScene" uid="uid://du6ykx423iqw3" path="res://scenes/acorns.tscn" id="7_na1q6"]
 [ext_resource type="Script" uid="uid://bbj3owiwabo5a" path="res://scripts/objects.gd" id="8_spcp4"]
+[ext_resource type="PackedScene" uid="uid://c7fas5erihoqj" path="res://scenes/metsa_maasika.tscn" id="10_c6v6n"]
 [ext_resource type="AudioStream" uid="uid://cuhchrqtmlm0l" path="res://assets/music/Forest - Wandering.ogg" id="10_xt3cc"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_3584d"]
@@ -90,3 +91,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8045123, 2.4694738, 2.1408
 stream = ExtResource("10_xt3cc")
 autoplay = true
 parameters/looping = false
+
+[node name="metsaMaasika" parent="." instance=ExtResource("10_c6v6n")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.2399623, -0.086527705, -1.4547985)
