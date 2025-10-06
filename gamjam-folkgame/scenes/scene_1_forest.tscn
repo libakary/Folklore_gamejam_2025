@@ -84,6 +84,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.948303, -0.08497733, 0.871
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.020262241, 0)
 script = ExtResource("8_spcp4")
 
+[node name="metsaMaasika" parent="objects" instance=ExtResource("10_c6v6n")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.2399623, -0.066265464, -1.4547985)
+
 [node name="acorns" parent="objects" instance=ExtResource("7_na1q6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8045123, 2.4694738, 2.140807)
 
@@ -92,5 +95,7 @@ stream = ExtResource("10_xt3cc")
 autoplay = true
 parameters/looping = false
 
-[node name="metsaMaasika" parent="." instance=ExtResource("10_c6v6n")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 2.2399623, -0.086527705, -1.4547985)
+[node name="DialogueTimer" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="timeout" from="DialogueTimer" to="." method="_on_dialogue_timer_timeout"]

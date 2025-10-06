@@ -22,6 +22,8 @@ func _input(event):
 			if globalVariables.dialogueProgEva < 1:
 				evaDialogOne()
 			print("input")
+		elif globalVariables.dialogueProg == 2:
+			$DialogueTimer.start(5)
 		pass
 
 func foxDialogOne():
@@ -43,3 +45,11 @@ func evaDialogOne():
 func end():
 	Dialogic.timeline_ended.disconnect(end)
 	globalVariables.canPlayerMove = true
+
+
+func _on_dialogue_timer_timeout() -> void:
+	Dialogic.start("timeline")
+	globalVariables.dialogueProg += 1
+	get_viewport().set_input_as_handled()
+	Dialogic.timeline_ended.connect(end)
+	pass # Replace with function body.
