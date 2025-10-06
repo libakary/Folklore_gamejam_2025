@@ -13,8 +13,9 @@ func _process(_delta: float) -> void:
 
 func _input(event):
 	if event.is_action_pressed("interact"):
-		
-		if $Fox.interactionPossible:
+		if not globalVariables.canPlayerMove:
+			return
+		elif $Fox.interactionPossible:
 			if globalVariables.dialogueProgFox < 1:
 				foxDialogOne()
 			print("input")
