@@ -41,8 +41,9 @@ directories/dtl_directory={
 "timeline": "res://timelines/A1S2.dtl"
 }
 layout/style_directory={
-"": "res://themes/New_File.tres",
-"Theme": "res://themes/New_File.tres"
+"": "res://themes/Theme.tres",
+"Theme": "res://themes/Theme.tres",
+"WalkAndTalk": "res://themes/WalkAndTalk.tres"
 }
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
@@ -87,8 +88,8 @@ audio/type_sound_bus="SFX"
 text/input_action="dialogic_default_action"
 text/autocolor_names=false
 glossary/default_case_sensitive=true
-layout/style_list=["res://themes/New_File.tres"]
-layout/default_style="res://themes/New_File.tres"
+layout/style_list=["res://themes/Theme.tres", "res://themes/WalkAndTalk.tres"]
+layout/default_style="res://themes/Theme.tres"
 variables={}
 
 [display]
