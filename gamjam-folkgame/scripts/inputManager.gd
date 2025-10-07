@@ -18,10 +18,14 @@ func _input(event):
 		elif $Fox.interactionPossible:
 			if globalVariables.dialogueProgFox < 1:
 				foxDialogOne()
+			elif globalVariables.dialogueProgFox == 1 and globalVariables.dialogueProg > 4:
+				foxDialogTwo()
 			print("input")
 		elif $Eva.interactionPossible:
 			if globalVariables.dialogueProgEva < 1:
 				evaDialogOne()
+			elif globalVariables.dialogueProgEva == 1 and globalVariables.dialogueProg > 2:
+				evaDialogTwo()
 			print("input")
 		pass
 
@@ -58,3 +62,18 @@ func _on_dialogue_timer_timeout() -> void:
 	get_viewport().set_input_as_handled()
 	Dialogic.timeline_ended.connect(end)
 	pass # Replace with function body.
+
+func evaDialogTwo():
+	globalVariables.canPlayerMove = false
+	Dialogic.start("A1S3D2")
+	globalVariables.dialogueProgEva += 1
+	globalVariables.dialogueProg += 1
+	get_viewport().set_input_as_handled()
+	Dialogic.timeline_ended.connect(end)
+func foxDialogTwo():
+	globalVariables.canPlayerMove = false
+	Dialogic.start("A1S4")
+	globalVariables.dialogueProgFox += 1
+	globalVariables.dialogueProg += 1
+	get_viewport().set_input_as_handled()
+	Dialogic.timeline_ended.connect(end)
