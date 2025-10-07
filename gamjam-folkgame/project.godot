@@ -32,13 +32,13 @@ directories/dch_directory={
 directories/dtl_directory={
 "A1S1D1": "res://timelines/A1S1D1.dtl",
 "A1S1D2": "res://timelines/A1S1D2.dtl",
+"A1S2": "res://timelines/A1S2.dtl",
 "A1S3D1": "res://timelines/A1S3D1.dtl",
 "A1S3D2": "res://timelines/A1S3D2.dtl",
 "A1S4": "res://timelines/A1S4.dtl",
 "A1S5D1": "res://timelines/A1S5D1.dtl",
 "A1S5D2": "res://timelines/A1S5D2.dtl",
-"helloWorld": "res://timelines/helloWorld.dtl",
-"timeline": "res://timelines/A1S2.dtl"
+"helloWorld": "res://timelines/helloWorld.dtl"
 }
 layout/style_directory={
 "": "res://themes/Theme.tres",

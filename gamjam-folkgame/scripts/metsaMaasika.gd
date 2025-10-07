@@ -18,7 +18,7 @@ func _process(_delta: float) -> void:
 func _input(event):
 	if event.is_action_pressed("interact"):
 		if interactionPossible:
-			if globalVariables.dialogueProg == 3:
+			if globalVariables.dialogueProg == 3 and globalVariables.canDialogStart:
 				strawberryQuest()
 			print("strawberry")
 			pass

@@ -13,7 +13,7 @@ func _process(_delta: float) -> void:
 
 func _input(event):
 	if event.is_action_pressed("interact"):
-		if not globalVariables.canPlayerMove:
+		if not globalVariables.canPlayerMove or not globalVariables.canDialogStart:
 			return
 		elif $Fox.interactionPossible:
 			if globalVariables.dialogueProgFox < 1:
@@ -23,8 +23,6 @@ func _input(event):
 			if globalVariables.dialogueProgEva < 1:
 				evaDialogOne()
 			print("input")
-		elif globalVariables.dialogueProg == 2:
-			$DialogueTimer.start(5)
 		pass
 
 func foxDialogOne():
@@ -34,6 +32,8 @@ func foxDialogOne():
 	globalVariables.dialogueProg += 1
 	get_viewport().set_input_as_handled()
 	Dialogic.timeline_ended.connect(end)
+	if globalVariables.dialogueProg == 2:
+			$DialogueTimer.start(60)
 
 func evaDialogOne():
 	globalVariables.canPlayerMove = false
@@ -42,14 +42,18 @@ func evaDialogOne():
 	globalVariables.dialogueProg += 1
 	get_viewport().set_input_as_handled()
 	Dialogic.timeline_ended.connect(end)
+	if globalVariables.dialogueProg == 2:
+			$DialogueTimer.start(60)
 
 func end():
 	Dialogic.timeline_ended.disconnect(end)
 	globalVariables.canPlayerMove = true
+	globalVariables.canDialogStart = true
 
 
 func _on_dialogue_timer_timeout() -> void:
-	Dialogic.start("timeline")
+	globalVariables.canDialogStart = false
+	Dialogic.start("A1S2")
 	globalVariables.dialogueProg += 1
 	get_viewport().set_input_as_handled()
 	Dialogic.timeline_ended.connect(end)
